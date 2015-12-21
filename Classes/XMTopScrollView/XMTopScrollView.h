@@ -8,21 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSInteger, XMTopItemShowType) {
+    XMTopItemShowTypeNone,              //默认,无显示类型
+    XMTopItemShowTypeCenter,            //居中显示(单数)
+    XMTopItemShowTypeAll                //完整显示
+};
+
 @protocol XMTopScrollViewDelegate <NSObject>
 
 - (void)selectClickAction:(NSInteger)index;
 
 @end
 
-@interface XMTopScrollView : UIView <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout> {
-    UICollectionView                *mainCollectionView;
-    UIScrollView                    *mainScrollView;
-    UIView                          *lineView;
-    
-    NSMutableArray                  *list;
-    
-    NSUInteger                      selectRow;
-}
+@interface XMTopScrollView : UIView 
 
 @property (nonatomic, weak) id <XMTopScrollViewDelegate> delegate;
 
@@ -39,9 +37,9 @@
 @property (nonatomic, strong) UIColor *topColor;
 
 /**
- * cell的宽度
+ * 当前页面cell的数量
  **/
-@property (nonatomic, assign) NSInteger cellWidth;
+@property (nonatomic, assign) NSInteger cellCount;
 
 /**
  * cell分割线是否隐藏,默认显示
@@ -67,5 +65,10 @@
  * 字体选中颜色
  **/
 @property (nonatomic, strong) UIColor *textSelectedtColor;
+
+/**
+ * 被选中对象显示方式
+ **/
+@property (nonatomic, assign) NSInteger showType;
 
 @end
