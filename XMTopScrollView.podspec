@@ -9,7 +9,7 @@ s.author       = { 'rgshio' => 'xzy0819@qq.com' }
 
 s.source       = { :git => 'https://github.com/rgshio/XMTopScrollView.git', :tag => "v#{s.version}" }
 
-s.source_files = 'Classes/XMTopScrollView/*.{h,m,xib}'
+s.source_files = 'Classes/XMTopScrollView/*'
 s.ios.frameworks = 'Foundation', 'UIKit'
 s.ios.deployment_target = '7.0' # minimum SDK with autolayout
 
