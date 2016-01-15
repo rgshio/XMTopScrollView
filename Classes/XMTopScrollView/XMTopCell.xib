@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -21,7 +21,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VAp-IW-n6k">
-                        <rect key="frame" x="0.0" y="2" width="1" height="36"/>
+                        <rect key="frame" x="0.0" y="8" width="1" height="24"/>
                         <color key="backgroundColor" red="0.75686274509999996" green="0.75686274509999996" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="1" id="kW3-VL-W1S"/>
@@ -32,15 +32,17 @@
             </view>
             <constraints>
                 <constraint firstItem="c8w-sD-ZAl" firstAttribute="leading" secondItem="Tid-Ec-NRu" secondAttribute="leading" id="WYx-Ga-rIH"/>
-                <constraint firstItem="VAp-IW-n6k" firstAttribute="top" secondItem="Tid-Ec-NRu" secondAttribute="top" constant="2" id="YiF-0D-c6e"/>
+                <constraint firstItem="VAp-IW-n6k" firstAttribute="top" secondItem="Tid-Ec-NRu" secondAttribute="top" constant="8" id="YiF-0D-c6e"/>
                 <constraint firstAttribute="bottom" secondItem="c8w-sD-ZAl" secondAttribute="bottom" id="a3b-XV-V7s"/>
                 <constraint firstItem="VAp-IW-n6k" firstAttribute="leading" secondItem="Tid-Ec-NRu" secondAttribute="leading" id="bTH-76-7tw"/>
-                <constraint firstAttribute="bottom" secondItem="VAp-IW-n6k" secondAttribute="bottom" constant="2" id="isq-79-xvA"/>
+                <constraint firstAttribute="bottom" secondItem="VAp-IW-n6k" secondAttribute="bottom" constant="8" id="isq-79-xvA"/>
                 <constraint firstAttribute="trailing" secondItem="c8w-sD-ZAl" secondAttribute="trailing" id="ony-yu-Jie"/>
                 <constraint firstItem="c8w-sD-ZAl" firstAttribute="top" secondItem="Tid-Ec-NRu" secondAttribute="top" id="wEb-ha-0d4"/>
             </constraints>
             <connections>
                 <outlet property="lineView" destination="VAp-IW-n6k" id="gfT-hk-nBo"/>
+                <outlet property="lineViewBottomLayout" destination="isq-79-xvA" id="tSf-7m-STi"/>
+                <outlet property="lineViewTopLayout" destination="YiF-0D-c6e" id="2j0-rH-0He"/>
                 <outlet property="titleLabel" destination="c8w-sD-ZAl" id="tkM-CE-77E"/>
             </connections>
             <point key="canvasLocation" x="273" y="249"/>

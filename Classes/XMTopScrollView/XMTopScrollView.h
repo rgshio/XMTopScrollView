@@ -47,6 +47,11 @@ typedef NS_ENUM(NSInteger, XMTopItemShowType) {
 @property (nonatomic, assign) BOOL separatorHidden;
 
 /**
+ * cell分割线距离顶部的距离
+ **/
+@property (nonatomic, assign) CGFloat separatorTop;
+
+/**
  * 滑线的高度,默认为2
  **/
 @property (nonatomic, assign) NSInteger lineHeight;
@@ -69,6 +74,6 @@ typedef NS_ENUM(NSInteger, XMTopItemShowType) {
 /**
  * 被选中对象显示方式
  **/
-@property (nonatomic, assign) NSInteger showType;
+@property (nonatomic, assign) XMTopItemShowType showType;
 
 @end

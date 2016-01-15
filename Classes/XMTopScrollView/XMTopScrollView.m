@@ -42,6 +42,7 @@
     self.textSelectedtColor = [UIColor colorWithRed:(float)0/255 green:(float)113/255 blue:(float)220/255 alpha:1.0f];
     
     self.lineHeight = 2;
+    self.separatorTop = 8;
     self.separatorHidden = YES;
     self.textDefaultColor = [UIColor blackColor];
     self.showType = XMTopItemShowTypeNone;
@@ -167,6 +168,8 @@
     XMTopCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellId forIndexPath:indexPath];
     
     cell.titleLabel.text = _list[indexPath.row];
+    cell.lineViewTopLayout.constant = self.separatorTop;
+    cell.lineViewBottomLayout.constant = self.separatorTop;
     
     if (indexPath.row == _selectRow) {
         cell.titleLabel.textColor = self.textSelectedtColor;

@@ -12,6 +12,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *titleLabel;
 @property (strong, nonatomic) IBOutlet UIView *lineView;
 
-
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *lineViewTopLayout;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *lineViewBottomLayout;
 
 @end
